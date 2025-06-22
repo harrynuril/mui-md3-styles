@@ -1,0 +1,39 @@
+{
+  "name": "mui-md3-custom-palettes",
+  "version": "1.0.0",
+  "description": "Custom MUI Color Palettes Inspired by Material Design 3. Ideal for developers looking to apply modern, dynamic color theming in their React applications using MUI v5+. Includes support for light and dark modes, tonal palettes, and extended theme customization.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "repository": "https://github.com/harrynuril/mui-md3-custom-palettes.git",
+  "author": "Harry Nuril <harry.nuril@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@mui/material": "^7.0.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.3",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "rollup": "^4.44.0",
+    "rollup-plugin-dts": "^6.2.1", 
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^5.8.3"
+  }
+}
