@@ -1,0 +1,147 @@
+import { ColorShades } from './../interfaces/color';
+
+export const primary: Partial<ColorShades> = {
+  0: '#000000',
+  5: '#00131F',
+  10: '#001E2F',
+  20: '#00344E',
+  30: '#004B6F',
+  40: '#006491',
+  50: '#007EB6',
+  60: '#3699D2',
+  70: '#58B4EE',
+  80: '#8ACEFF',
+  90: '#B7DFFF',
+  100: '#FFFFFF', 
+};
+
+export const secondary: Partial<ColorShades> = {
+  0: '#000000',
+  5: '#02131E',
+  10: '#0C1D29',
+  20: '#22323F',
+  30: '#384956',
+  40: '#50606E',
+  50: '#687988',
+  60: '#8293A2',
+  70: '#9CADBD',
+  80: '#B7C9D9',
+  90: '#D3E5F5',
+  100: '#FFFFFF',
+};
+
+export const tertiary: Partial<ColorShades> = {
+  0: '#000000',
+  5: '#18003F',
+  10: '#25005A',
+  20: '#3B1D71',
+  30: '#523689',
+  40: '#6A4FA3',
+  50: '#8468BE',
+  60: '#9E81DA',
+  70: '#B99CF6',
+  80: '#D2BBFF',
+  90: '#EADDFF',
+  100: '#FFFFFF',
+};
+
+export const error: Partial<ColorShades> = {
+  0: '#000000',
+  5: '#200e13',
+  10: '#37141d',
+  20: '#6a1b2b',
+  30: '#9f2332',
+  40: '#d33131',
+  50: '#e35859',
+  60: '#ef7a80',
+  70: '#f89ca4',
+  80: '#fdbdc6',
+  90: '#ffdee4',
+  100: '#FFFFFF',
+};
+
+export const success: Partial<ColorShades> = {
+  0: '#000000',
+  5: '#061006',
+  10: '#0c200d',
+  20: '#18401a',
+  30: '#235f26',
+  40: '#2f7f33',
+  50: '#529455',
+  60: '#74aa77',
+  70: '#97bf99',
+  80: '#bad4bb',
+  90: '#dceadd',
+  100: '#FFFFFF',
+};
+
+export const warning: Partial<ColorShades> = {
+  0: '#000000',
+  5: '#1e0e00',
+  10: '#3b1b01',
+  20: '#773601',
+  30: '#b25102',
+  40: '#ed6c02',
+  50: '#f0842c',
+  60: '#f39d56',
+  70: '#f6b581',
+  80: '#f9ceab',
+  90: '#fce6d5',
+  100: '#FFFFFF',
+};
+
+export const info: Partial<ColorShades> = {
+  0: '#000000',
+  5: '#00111a',
+  10: '#012234',
+  20: '#014468',
+  30: '#02659b',
+  40: '#0287cf',
+  50: '#2c9bd7',
+  60: '#56afdf',
+  70: '#81c3e7',
+  80: '#abd7ef',
+  90: '#d5ebf7',
+  100: '#FFFFFF',
+};
+
+export const neutral: Partial<ColorShades> = {
+  0: '#000000',
+  4: '#0C0E11',
+  5: '#0F1113',
+  6: '#111416',
+  10: '#1A1C1E',
+  12: '#1E2022',
+  17: '#282A2D',
+  20: '#2E3133',
+  22: '#333537',
+  30: '#454749',
+  40: '#5D5E61',
+  50: '#75777A',
+  60: '#8F9193',
+  70: '#AAABAE',
+  80: '#C5C6C9',
+  87: '#D9DADD',
+  90: '#E2E2E5',
+  92: '#E7E8EB',
+  94: '#EDEEF1',
+  95: '#F0F0F3',
+  96: '#F3F3F6',
+  98: '#F9F9FC',
+  100: '#FFFFFF',
+};
+
+export const neutralVariant: Partial<ColorShades> = {
+  0: '#000000',
+  5: '#0B1217',
+  10: '#161C21',
+  20: '#2B3137',
+  30: '#41474D',
+  40: '#595F65',
+  50: '#72787E',
+  60: '#8B9198',
+  70: '#A6ACB3',
+  80: '#C1C7CE',
+  90: '#DDE3EA',
+  100: '#FFFFFF',
+};
