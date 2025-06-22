@@ -1,11 +1,13 @@
 {
-  "name": "mui-md3-custom-palettes",
+  "name": "mui-md3-theme",
   "version": "1.0.0",
-  "description": "Custom MUI Color Palettes Inspired by Material Design 3. Ideal for developers looking to apply modern, dynamic color theming in their React applications using MUI v5+. Includes support for light and dark modes, tonal palettes, and extended theme customization.",
+  "description": "Custom MUI Themes using custom color palettes inspired by Material Design 3. Ideal for developers looking to apply modern, dynamic color theming in their React applications using MUI v5+. Includes support for light and dark modes, tonal palettes, and extended theme customization.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/harrynuril/mui-md3-custom-palettes.git",
   "author": "Harry Nuril <harry.nuril@gmail.com>",
   "license": "MIT",
@@ -14,14 +16,19 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
+    "@mui/material": "^7.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "@mui/material": "^7.0.0"
+    "react-dom": "^19.0.0"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@fontsource-variable/open-sans": "^5.2.6",
     "@mui/material": "^7.1.2",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^5.5.0",
+    "prettier": "^3.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -32,7 +39,7 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "rollup": "^4.44.0",
-    "rollup-plugin-dts": "^6.2.1", 
+    "rollup-plugin-dts": "^6.2.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "typescript": "^5.8.3"
   }
