@@ -1,0 +1,1 @@
+export { typographyComponent } from './typography';

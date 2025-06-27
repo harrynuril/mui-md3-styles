@@ -1,9 +1,11 @@
 import { PaletteMode, Theme } from '@mui/material';
 import { createTheme, PaletteOptions, ThemeOptions, ThemeProvider as MUIThemeProvider } from '@mui/material/styles';
 import { createContext, ReactNode, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { typographyComponent } from 'themes/components';
 import { defaultColorShades } from 'themes/defaults/colors';
 import { Palette } from 'themes/interfaces';
 import { ThemeColorShades } from 'themes/interfaces/color';
+import { typography } from 'themes/typography';
 import { createMuiPalette, createThemeColorPalette, generateColorShade, isHexColor } from 'utils';
 
 interface ThemeContextType {
@@ -37,7 +39,7 @@ interface Props {
 }
 
 export const MuiMD3ThemeProvider = ({ theme, customColors, children }: Props) => {
-  const { palette, ...restTheme } = theme;
+  const { palette, components, ...restTheme } = theme;
 
   const [themeColorShades, setThemeColorShades] = useState<ThemeColorShades>();
   const [lightTheme, setLightTheme] = useState<Theme>();
@@ -65,14 +67,20 @@ export const MuiMD3ThemeProvider = ({ theme, customColors, children }: Props) =>
 
   const createThemeByPalette = useCallback(
     (muiPalette: PaletteOptions, palette: Partial<Palette> = {}): Theme => {
+      const newComponents = {
+        ...components,
+        ...typographyComponent,
+      };
       const themeOptions: ThemeOptions = {
         ...restTheme,
         palette: muiPalette,
         color: palette,
+        typography: typography,
+        components: newComponents,
       };
       return createTheme(themeOptions);
     },
-    [restTheme],
+    [restTheme, components],
   );
 
   useEffect(() => {
