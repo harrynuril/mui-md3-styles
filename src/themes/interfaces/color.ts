@@ -23,3 +23,15 @@ export interface ColorShades {
   98: string;
   100: string;
 }
+
+export interface ThemeColorShades {
+  primary: Partial<ColorShades>;
+  secondary: Partial<ColorShades>;
+  tertiary: Partial<ColorShades>;
+  error: Partial<ColorShades>;
+  success: Partial<ColorShades>;
+  warning: Partial<ColorShades>;
+  info: Partial<ColorShades>;
+  neutral: Partial<ColorShades>;
+  neutralVariant: Partial<ColorShades>;
+}
