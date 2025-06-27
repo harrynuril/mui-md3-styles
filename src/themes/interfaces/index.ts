@@ -1,2 +1,2 @@
 export type { ColorShades } from './color';
-export type { Palette } from './palette'; 
+export type { Palette } from './palette';
