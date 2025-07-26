@@ -1,9 +1,11 @@
 {
   "name": "mui-md3-styles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom MUI Themes objects with custom color palette and typography inspired by Material Design 3. To apply dynamic color theming in their React applications using MUI v6+. Includes support for light and dark modes.",
-  "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -11,7 +13,7 @@
   "author": "Harry Nuril <harry.nuril@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node scripts/build.js",
+    "build": "rollup -c",
     "prepublishOnly": "yarn build"
   },
   "peerDependencies": {
